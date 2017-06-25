@@ -1,0 +1,32 @@
+
+.foot{
+    color: rgb(145, 145, 145);
+    font: 1.2rem 'Open Sans';
+    background:#171717;
+}
+
+
+
+.tSerif{
+    display: flex;
+    flex-flow: wrap; 
+    justify-content: flex-end;  
+}
+
+.tSerif article{	
+    position: relative;
+    width: 29%;
+    padding: 40px 40px 40px 0 ;
+}
+/*.tSerif article:nth-of-type(3n){
+    margin: 0 0 40px 0;
+}*/
+.tSerif article h2{
+    border-top: .1rem solid rgb(145, 145, 145);
+    padding-top: 20px; 
+}
+
+
+article .tSerif{
+    font-family:  serif;
+}

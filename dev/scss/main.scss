@@ -1,0 +1,127 @@
+@import '_footer.scss';
+@import '_header.scss'; 
+
+
+.main{
+    color: rgb(86, 86, 86);
+    font: 1.4rem 'Open Sans';
+    background: rgb(246, 246, 246);
+
+    margin: 40px 0 0 0;
+    padding: 0 0 100px 0;
+    
+}
+.main .column {
+    display: flex;
+    justify-content: space-between; 
+    
+}
+.main .gridContainer{
+    padding: 40px 0;
+}
+
+.main h1{
+    border-top: .1rem dashed rgb(149, 149, 149);
+    padding-top: 10px;
+    width: calc(25% - 20px);
+    position: relative;  
+    text-transform: uppercase;
+}
+
+.main .column .content{
+    width:calc(75% - 20px);
+    font-size: 1.2rem;
+}
+
+
+/*BLOG
+------------------------------*/
+.main .blog {
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+.blog article{
+    width:calc((100%-80px)\3);
+    margin: 0 40px 40px 0;  
+    overflow: hidden;
+
+}
+
+ .blog article:nth-of-type(3n){
+    margin: 0 0 40px 0;
+}
+
+
+
+.column article {	
+    position: relative;
+    width: 30%;
+    float: left;  
+}
+
+.blog article a{
+    bottom: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    left:0;
+    padding: 1rem;
+    transition: bottom  1s;
+    display: flex;
+    flex-flow: column;
+}
+
+ .blog article:hover a{
+   bottom: 33.5%;
+}
+  article a img{
+        width:35px;
+        height: 35px;
+        margin: 150px 0 0 95px;
+   
+    
+}
+/*GALLERY
+------------------------------*/
+
+.main .gallery{
+    display: flex;
+    flex-flow: wrap;  
+}
+.main .gallery article{
+    height: 173px;
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+}
+.main .gallery article img{
+    padding: 0;
+}
+
+.main .gallery article a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    top: 100%;
+    left:0;
+    padding: 1rem;
+    transition: top 1s;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+.main .gallery article:hover a{
+    top: 0;
+}
+
+
+	
+
+
+
+
